@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+  box-shadow: 0 1px 3px -2px black;
+}
+.btn{
+  outline: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px ;
+  color: #515151;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  cursor:pointer ; 
+  padding: 10px;
+}
+.btn:active{
+  background-color: #f3f3f3;
+}
+.counter{
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  font-size: 14px;
+  background-color: red;
+}
+.li{
+  border-bottom:4px solid red ; 
+ transition: all;
+ transition-duration: 0.1s;
+ gap: 6px;
+  cursor: pointer;
+}
+li:hover{
+  cursor: pointer;
+}
+.hero{
+background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+}
+.hero-left p{
+  color: #171717;
+  font-size: 60px;
+  font-weight: 700;
+}
+.hero-btn{
+  display: flex;
+  align-items: center;
+  
+  gap: 15px;
+  width: 310px;
+  height: 70px;
+  border-radius: 74px;
+  margin-top: 30px;
+  background: #ff4141;
+  color: white;
+  font-size: 22px;
+  padding:30px;
+}
+.hero-right{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h1-women{
+  border-bottom: 5px solid black;
+}
+.img-women:hover{
+  scale: 1.1;
+}
+.keyframes-women{
+animation: popularInWomen 1s ease-in;
+
+}
+@keyframes popularInWomen {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.offers{
+  background: linear-gradient(180deg,#fde1ff 0%,#21ffea22 60%);
+}
+.execlusive-email{
+  background: linear-gradient(180deg,#fde1ff 0%,#21ffea22 60%);
+}
+.login{
+  background: linear-gradient(180deg,#fde1ff 0%,#21ffea22 60%);
+}
+.men-products{
+  
+  animation: popularInWomen 1.5s ease-in-out;
+}
+.animate-menu{
+  animation: menu 1.5s ease-in;
+}
+@keyframes menu{
+  0%{
+    opacity: 0.1;
+    transform: scale(0.2);
+    left: -1000px;
+    margin-right: -1000px;
+  }
+  50%{
+    opacity: 0.7;
+    transform: scale(0.7);
+    left: -10px;
+    margin-right: -100px;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+    
+  }
+}
